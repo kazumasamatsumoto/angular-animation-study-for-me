@@ -1,0 +1,26 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+  background: linear-gradient(90deg, #e94560, #ff6b6b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.subtitle {
+  color: #a0a0a0;
+  font-size: 0.95rem;
+  margin: 0;
+}

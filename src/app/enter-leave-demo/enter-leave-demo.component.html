@@ -1,0 +1,21 @@
+<section class="demo-section">
+  <h2>animate.enter / animate.leave デモ</h2>
+  <p class="description">
+    ボタンをクリックすると、要素がスライド＆フェードインで表示され、再度クリックするとフェードアウトして消えます。
+  </p>
+
+  <button type="button" class="toggle-btn" (click)="toggle()">
+    {{ isShown() ? '非表示にする' : '表示する' }}
+  </button>
+
+  @if (isShown()) {
+    <div
+      class="enter-leave-container"
+      animate.enter="enter-animation"
+      animate.leave="leave-animation"
+    >
+      <p>🎉 要素がアニメーション付きで表示されています！</p>
+      <p class="hint">もう一度ボタンを押すと、アニメーション付きで消えます。</p>
+    </div>
+  }
+</section>
